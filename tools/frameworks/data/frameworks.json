@@ -1,0 +1,235 @@
+[
+  {
+    "slug": "oracle",
+    "acronym": "ORACLE",
+    "queryValue": "standard",
+    "name": "Objective, Role, Action, Context, Layout/Length, Example",
+    "tagline": "A well-rounded, six-part structure for everyday prompts.",
+    "whenToUse": "ORACLE is the default choice when you're not sure which framework to reach for. It covers the six things almost any prompt benefits from: what you want, who the AI should act as, what to actually do, the background it needs, how the output should be shaped, and a concrete example. Use it for blog intros, emails, explainers, summaries, and general writing or research tasks.",
+    "components": [
+      { "letter": "O", "name": "Objective", "description": "The end result you're after — the single sentence that describes success." },
+      { "letter": "R", "name": "Role", "description": "The persona or expertise you want the AI to adopt while answering." },
+      { "letter": "A", "name": "Action", "description": "The specific task the AI needs to perform, stated as a clear instruction." },
+      { "letter": "C", "name": "Context", "description": "Background details, audience, or constraints the AI needs to get it right." },
+      { "letter": "L", "name": "Layout/Length", "description": "The format, structure, and rough length of the output." },
+      { "letter": "E", "name": "Example", "description": "A sample of the tone, style, or structure you want it to match." }
+    ],
+    "badPrompt": "Write about email marketing.",
+    "goodPrompt": "Objective: Get more small business owners to open our weekly newsletter.\nRole: You are an email marketing strategist with experience writing for busy small business owners.\nAction: Write three subject line options for our weekly newsletter.\nContext: The newsletter covers one practical marketing tip per week. Our audience is time-poor and skeptical of hype.\nLayout/Length: Three subject lines, each under 60 characters, no emojis.\nExample: Similar in tone to \"The 10-minute fix for your slowest page\" — specific and low-hype.",
+    "exampleOutput": "Three subject lines matching the brief, each specific rather than generic, each under the character limit, with a short one-line note on why each one works for a skeptical, time-poor reader.",
+    "supportedModels": "ORACLE's plain, labeled-section format works well across ChatGPT, Claude, and Gemini — it doesn't rely on any model-specific syntax, which is why PromptGeneratorLab uses it as the default framework.",
+    "related": ["race", "create", "coast"]
+  },
+  {
+    "slug": "race",
+    "acronym": "RACE",
+    "queryValue": "race",
+    "name": "Role, Action, Context, Example",
+    "tagline": "A fast, four-part structure for when you need a good prompt in under a minute.",
+    "whenToUse": "RACE strips ORACLE down to the essentials. Reach for it when the task is simple enough that you don't need to spell out layout and length separately — quick drafts, short-form content, one-off questions, and situations where you'd rather move fast than be exhaustive.",
+    "components": [
+      { "letter": "R", "name": "Role", "description": "Who the AI should be while it answers — this shapes vocabulary and judgment more than any other single instruction." },
+      { "letter": "A", "name": "Action", "description": "The exact thing you want done, phrased as a direct instruction rather than a vague ask." },
+      { "letter": "C", "name": "Context", "description": "Just enough background for the answer to be usable — audience, purpose, or constraints." },
+      { "letter": "E", "name": "Example", "description": "A short reference point so the AI can match your intended tone or format." }
+    ],
+    "badPrompt": "Give me some tweet ideas.",
+    "goodPrompt": "Role: You are a social media manager for a bootstrapped SaaS product.\nAction: Write five tweet ideas announcing a new feature.\nContext: The feature is a dark mode toggle. Our audience is mostly developers who dislike marketing-speak.\nExample: Tone should be closer to a changelog entry than an ad — plain, specific, a little dry.",
+    "exampleOutput": "Five short tweet drafts, each announcing the feature from a slightly different angle (the feature itself, why it exists, a specific use case, a light joke, a direct CTA), written in the plain, low-hype tone the example called for.",
+    "supportedModels": "RACE works well as a universal format, and is especially effective with ChatGPT and Claude for short-form, high-frequency content where speed matters more than exhaustive detail.",
+    "related": ["oracle", "tag", "ape"]
+  },
+  {
+    "slug": "care",
+    "acronym": "CARE",
+    "queryValue": "care",
+    "name": "Context, Action, Result, Example",
+    "tagline": "A result-oriented structure that keeps the AI focused on the outcome you actually need.",
+    "whenToUse": "CARE is useful whenever the deliverable matters more than the process — reports, summaries, business writing, and any task where you want the AI to work backward from a defined result instead of just following instructions step by step.",
+    "components": [
+      { "letter": "C", "name": "Context", "description": "The situation the AI is operating in — what's happening and why this task exists." },
+      { "letter": "A", "name": "Action", "description": "What you need the AI to do to move from the current situation toward the result." },
+      { "letter": "R", "name": "Result", "description": "The specific outcome that defines a successful answer — what \"done\" looks like." },
+      { "letter": "E", "name": "Example", "description": "A model of the format, tone, or level of detail the result should have." }
+    ],
+    "badPrompt": "Summarize this quarter's sales data.",
+    "goodPrompt": "Context: Our Q3 sales data shows growth in two regions and a decline in one, and leadership has 10 minutes before a board meeting.\nAction: Summarize the data into the key takeaways leadership needs to know.\nResult: A summary that lets a non-analyst understand what changed and why, without needing to read the underlying spreadsheet.\nExample: Similar structure to a three-bullet executive summary — headline number, driver, one recommended action.",
+    "exampleOutput": "A short executive summary with a headline figure, the main driver behind the regional decline, and one recommended next step — formatted for someone reading it in the elevator before a meeting, not an analyst.",
+    "supportedModels": "CARE is a strong fit for both ChatGPT and Claude when the task is business or analytical writing, since naming the Result up front keeps longer-context models from wandering into unnecessary detail.",
+    "related": ["oracle", "coast", "roses"]
+  },
+  {
+    "slug": "ape",
+    "acronym": "APE",
+    "queryValue": "ape",
+    "name": "Action, Purpose, Expectation",
+    "tagline": "The shortest useful framework — three parts, built for speed.",
+    "whenToUse": "APE is the framework to reach for when you need something quick and the task is genuinely simple: a rewrite, a short explanation, a single piece of copy. It trades thoroughness for speed, so it's not the right choice for anything with real nuance or multiple constraints.",
+    "components": [
+      { "letter": "A", "name": "Action", "description": "The task itself, stated plainly." },
+      { "letter": "P", "name": "Purpose", "description": "Why you need it — this single line of \"why\" often does more to improve output than extra instructions would." },
+      { "letter": "E", "name": "Expectation", "description": "What the finished output should look or feel like." }
+    ],
+    "badPrompt": "Rewrite this sentence to sound better.",
+    "goodPrompt": "Action: Rewrite this sentence: \"Our product helps you manage tasks more efficiently.\"\nPurpose: It's the first line of our homepage and needs to earn a second sentence of attention.\nExpectation: One sentence, more specific and concrete than the original, no buzzwords like \"efficiently\" or \"seamless.\"",
+    "exampleOutput": "A single rewritten sentence that replaces the vague claim with something concrete and specific to what the product actually does, matching the length and tone constraint given.",
+    "supportedModels": "APE's brevity makes it a good match for quick ChatGPT sessions and for Claude when you want a fast, low-friction first draft to iterate on.",
+    "related": ["race", "tag", "oracle"]
+  },
+  {
+    "slug": "create",
+    "acronym": "CREATE",
+    "queryValue": "create",
+    "name": "Characterise, Request, Examples, Adjust, Test, Evaluate",
+    "tagline": "A six-part, iteration-friendly framework built for getting the details right.",
+    "whenToUse": "CREATE is designed for tasks you expect to refine rather than get right on the first try — long-form content, technical writing, anything where the first draft is a starting point. It builds revision into the framework itself instead of treating it as an afterthought.",
+    "components": [
+      { "letter": "C", "name": "Characterise", "description": "Define the role, tone, and expertise the AI should bring to the task." },
+      { "letter": "R", "name": "Request", "description": "State the core task clearly and specifically." },
+      { "letter": "E", "name": "Examples", "description": "Show the style, structure, or reference material to draw from." },
+      { "letter": "A", "name": "Adjust", "description": "Note any constraints or tweaks to apply on top of the base request." },
+      { "letter": "T", "name": "Test", "description": "Describe how the output should be checked or validated before it's considered finished." },
+      { "letter": "E", "name": "Evaluate", "description": "State the criteria that make the final output good enough to ship." }
+    ],
+    "badPrompt": "Write a technical guide about API rate limiting.",
+    "goodPrompt": "Characterise: You are a backend engineer writing documentation for other engineers.\nRequest: Write a guide explaining how to implement API rate limiting.\nExamples: Follow the structure of Stripe's API docs — short paragraphs, code snippets, no marketing language.\nAdjust: Focus on token bucket and sliding window approaches only; skip anything cloud-provider-specific.\nTest: A mid-level backend engineer should be able to implement a basic version after reading it once.\nEvaluate: Success means the guide has runnable code, not just conceptual explanation.",
+    "exampleOutput": "A structured technical guide covering token bucket and sliding window rate limiting, with short explanatory paragraphs and runnable code examples in the style of vendor API documentation, avoiding marketing language.",
+    "supportedModels": "CREATE's structure is particularly effective with Claude for longer technical or educational content, and works well with ChatGPT when you plan to iterate across multiple turns.",
+    "related": ["oracle", "resee", "coast"]
+  },
+  {
+    "slug": "tag",
+    "acronym": "TAG",
+    "queryValue": "tag",
+    "name": "Task, Action, Goal",
+    "tagline": "The simplest framework — three words, one clear instruction.",
+    "whenToUse": "TAG is for genuinely small tasks where anything more elaborate would be overkill: a single email, a short list, a quick calculation, a one-off question. If you find yourself wanting to add a fourth section, the task probably needs RACE or ORACLE instead.",
+    "components": [
+      { "letter": "T", "name": "Task", "description": "What needs to get done, named directly." },
+      { "letter": "A", "name": "Action", "description": "The specific step or output you want, not just the topic." },
+      { "letter": "G", "name": "Goal", "description": "What success looks like for this specific task." }
+    ],
+    "badPrompt": "Help me with my to-do list.",
+    "goodPrompt": "Task: Organize my to-do list for tomorrow.\nAction: Group these 8 items into \"must do,\" \"should do,\" and \"if time allows.\"\nGoal: I want to walk into tomorrow knowing exactly what the top 3 priorities are.",
+    "exampleOutput": "The eight items sorted into the three named buckets, with the top three must-do items called out explicitly at the top so the priority is unambiguous at a glance.",
+    "supportedModels": "TAG works equally well across ChatGPT, Claude, and Gemini — its brevity means there's little room for model-specific phrasing to matter.",
+    "related": ["ape", "race", "oracle"]
+  },
+  {
+    "slug": "creo",
+    "acronym": "CREO",
+    "queryValue": "creo",
+    "name": "Context, Role, Evidence, Output",
+    "tagline": "A framework built for answers that need to be grounded in specific evidence.",
+    "whenToUse": "CREO is the right choice when you're asking the AI to reason from specific facts, data, or source material rather than general knowledge — research summaries, analysis of a document you're pasting in, or any task where you want the answer traceable back to what you gave it.",
+    "components": [
+      { "letter": "C", "name": "Context", "description": "The situation and what the evidence is being used to decide or explain." },
+      { "letter": "R", "name": "Role", "description": "The expertise or perspective the AI should apply when interpreting the evidence." },
+      { "letter": "E", "name": "Evidence", "description": "The specific facts, data, or material the answer must be grounded in." },
+      { "letter": "O", "name": "Output", "description": "The exact form the answer should take." }
+    ],
+    "badPrompt": "What do you think about our survey results?",
+    "goodPrompt": "Context: We're deciding whether to prioritize a mobile app or a browser extension next quarter.\nRole: You are a product strategist evaluating user research.\nEvidence: 68% of respondents said they use our product primarily on desktop; 22% asked for mobile access; 10% mentioned browser workflow friction.\nOutput: A one-paragraph recommendation citing which numbers drove the conclusion.",
+    "exampleOutput": "A one-paragraph recommendation that names a clear priority, explicitly ties the conclusion back to the specific percentages given rather than general assumptions about mobile usage.",
+    "supportedModels": "CREO is especially strong with Claude for long-context, evidence-grounded analysis, and works well with ChatGPT when the evidence is pasted directly into the same conversation.",
+    "related": ["care", "resee", "coast"]
+  },
+  {
+    "slug": "rise",
+    "acronym": "RISE",
+    "queryValue": "rise",
+    "name": "Role, Input, Steps, Expectation",
+    "tagline": "A process-oriented framework for tasks that need to happen in a specific order.",
+    "whenToUse": "RISE is built for multi-step tasks — anything where the AI needs to work through a sequence rather than produce one answer in a single pass. Use it for plans, procedures, tutorials, or any task where getting the order right matters as much as the content.",
+    "components": [
+      { "letter": "R", "name": "Role", "description": "The expertise the AI should bring to sequencing and executing the task." },
+      { "letter": "I", "name": "Input", "description": "The starting material or situation the AI is working from." },
+      { "letter": "S", "name": "Steps", "description": "The stages you want the AI to work through, in order." },
+      { "letter": "E", "name": "Expectation", "description": "What the finished, step-by-step output should look like." }
+    ],
+    "badPrompt": "Help me plan a product launch.",
+    "goodPrompt": "Role: You are a product marketing manager who has run B2B SaaS launches before.\nInput: We're launching a new analytics dashboard feature in 6 weeks, team of 4, modest budget.\nSteps: Work through pre-launch (weeks 1-3), launch week, and post-launch (weeks 5-6) separately.\nExpectation: A week-by-week checklist, not a narrative — something I can hand straight to the team.",
+    "exampleOutput": "A week-by-week checklist broken into the three named phases, each with concrete action items sized for a 4-person team on a modest budget, formatted for direct handoff rather than prose.",
+    "supportedModels": "RISE performs well with both ChatGPT and Claude for planning tasks, and is particularly effective with Claude when the plan needs to stay coherent across a long, detailed output.",
+    "related": ["coast", "roses", "create"]
+  },
+  {
+    "slug": "pain",
+    "acronym": "PAIN",
+    "queryValue": "pain",
+    "name": "Problem, Action, Information, Next Steps",
+    "tagline": "A troubleshooting-focused framework for when something is broken and you need a fix.",
+    "whenToUse": "PAIN is built for diagnostic and troubleshooting tasks — debugging, fixing a broken process, or working through any problem where you need the AI to reason from symptom to cause to fix, rather than just generate content.",
+    "components": [
+      { "letter": "P", "name": "Problem", "description": "What's actually going wrong, described as specifically as possible." },
+      { "letter": "A", "name": "Action", "description": "What you want the AI to do about it — diagnose, fix, or explain." },
+      { "letter": "I", "name": "Information", "description": "The relevant details: error messages, what you've already tried, environment specifics." },
+      { "letter": "N", "name": "Next Steps", "description": "The form you want the resolution in — a fix, a checklist, a set of things to try." }
+    ],
+    "badPrompt": "My code isn't working, can you fix it?",
+    "goodPrompt": "Problem: My Node.js API returns a 500 error only when the request body is larger than ~1MB.\nAction: Diagnose the likely cause and suggest a fix.\nInformation: Using Express 4.19, no custom body-parser limits set, error only appears in production, not locally.\nNext Steps: Give me the specific config change to make, not a general explanation of body size limits.",
+    "exampleOutput": "A diagnosis pointing to the default body-parser size limit as the likely cause, followed by the specific Express configuration change needed to raise it, rather than a general essay about payload limits.",
+    "supportedModels": "PAIN works well with both ChatGPT and Claude for debugging tasks, and benefits from Claude's ability to hold a lot of surrounding code or log context when diagnosing less obvious bugs.",
+    "related": ["resee", "creo", "rise"]
+  },
+  {
+    "slug": "coast",
+    "acronym": "COAST",
+    "queryValue": "coast",
+    "name": "Context, Objective, Actions, Scenario, Task",
+    "tagline": "A five-part framework for detailed, multi-constraint tasks.",
+    "whenToUse": "COAST is worth the extra structure when a task has several moving parts that all need to be specified — detailed business writing, planning documents, or anything where leaving out one piece of context would meaningfully change the output.",
+    "components": [
+      { "letter": "C", "name": "Context", "description": "The background situation the task exists within." },
+      { "letter": "O", "name": "Objective", "description": "What you're trying to achieve overall." },
+      { "letter": "A", "name": "Actions", "description": "The specific things the AI needs to do to get there." },
+      { "letter": "S", "name": "Scenario", "description": "The concrete situation or constraints the actions need to account for." },
+      { "letter": "T", "name": "Task", "description": "The precise deliverable you want at the end." }
+    ],
+    "badPrompt": "Write a business plan for my idea.",
+    "goodPrompt": "Context: I'm starting a subscription coffee roasting business, solo founder, no funding yet.\nObjective: I need a plan that helps me decide if this is worth pursuing before I invest more time.\nActions: Estimate startup costs, identify the biggest risk, and outline a lean first 90 days.\nScenario: I can work on this part-time for now and have about $5,000 to start.\nTask: A one-page lean plan, not a full formal business plan document.",
+    "exampleOutput": "A one-page lean plan covering rough startup costs within the stated budget, the single biggest risk to the idea, and a 90-day outline sized for part-time effort — not a formal multi-section business plan.",
+    "supportedModels": "COAST is a good fit for both ChatGPT and Claude on detailed planning tasks, and its explicit Scenario section helps keep longer Claude outputs grounded in real constraints instead of generic advice.",
+    "related": ["care", "rise", "roses"]
+  },
+  {
+    "slug": "roses",
+    "acronym": "ROSES",
+    "queryValue": "roses",
+    "name": "Role, Objective, Scenario, Expected Solution, Steps",
+    "tagline": "A structured, solution-oriented framework for consulting-style problems.",
+    "whenToUse": "ROSES is suited to problems that need a considered recommendation rather than a straightforward answer — strategic decisions, tradeoff analysis, or anything where you want the AI to reason like a consultant working through a specific scenario toward a defined kind of solution.",
+    "components": [
+      { "letter": "R", "name": "Role", "description": "The expertise or perspective the AI should reason from." },
+      { "letter": "O", "name": "Objective", "description": "The underlying goal behind the request." },
+      { "letter": "S", "name": "Scenario", "description": "The specific situation, including relevant constraints and stakeholders." },
+      { "letter": "E", "name": "Expected Solution", "description": "The type of answer you're looking for — a recommendation, a comparison, a decision." },
+      { "letter": "S", "name": "Steps", "description": "How you want the reasoning or the answer broken down." }
+    ],
+    "badPrompt": "Should I raise my prices?",
+    "goodPrompt": "Role: You are a pricing strategist for small subscription businesses.\nObjective: I want to increase revenue without losing too many existing customers.\nScenario: I run a $15/month tool with 400 subscribers, churn is currently 5% monthly, no price increase in 2 years.\nExpected Solution: A specific recommendation, not a list of general pricing strategies.\nSteps: State the recommendation first, then the reasoning, then one risk to watch for.",
+    "exampleOutput": "A specific price-increase recommendation stated up front, followed by the reasoning tied to the given churn rate and subscriber count, and a named risk to monitor — not a generic list of pricing tactics.",
+    "supportedModels": "ROSES works well with Claude for nuanced, tradeoff-heavy business reasoning, and with ChatGPT when you want a faster, more direct recommendation.",
+    "related": ["coast", "care", "creo"]
+  },
+  {
+    "slug": "resee",
+    "acronym": "RESEE",
+    "queryValue": "resee",
+    "name": "Review, Evaluate, Suggest, Enhance, Explain",
+    "tagline": "A framework built specifically for improving something you've already written.",
+    "whenToUse": "RESEE is different from the others: it's not for generating new content, it's for reviewing and refining content you already have. Use it for editing drafts, critiquing your own writing, or getting a second opinion on something before you publish or send it.",
+    "components": [
+      { "letter": "R", "name": "Review", "description": "Ask the AI to read the existing content carefully before responding." },
+      { "letter": "E", "name": "Evaluate", "description": "Specify what to judge it against — clarity, tone, persuasiveness, accuracy." },
+      { "letter": "S", "name": "Suggest", "description": "Ask for specific, actionable suggestions rather than vague feedback." },
+      { "letter": "E", "name": "Enhance", "description": "Ask for an improved version, not just a critique." },
+      { "letter": "E", "name": "Explain", "description": "Ask the AI to explain why each change helps, so you can apply the lesson elsewhere." }
+    ],
+    "badPrompt": "Can you check this email?",
+    "goodPrompt": "Review: Here is my email to a client about a missed deadline: [paste email].\nEvaluate: Judge it on whether it sounds accountable without being overly apologetic.\nSuggest: Point out any lines that sound defensive or overly formal.\nEnhance: Rewrite it applying your suggestions.\nExplain: Briefly explain the two biggest changes you made and why.",
+    "exampleOutput": "Specific feedback identifying which lines read as defensive or overly formal, a rewritten version of the email, and a short explanation of the two most impactful changes so the pattern can be reused next time.",
+    "supportedModels": "RESEE is especially effective with Claude for longer documents where nuanced tone feedback matters, and works well with ChatGPT for shorter, quicker edits.",
+    "related": ["creo", "pain", "create"]
+  }
+]

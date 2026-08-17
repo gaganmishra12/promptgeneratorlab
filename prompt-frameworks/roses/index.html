@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROSES Prompt Framework — Role, Objective, Scenario, Expected Solution, Steps | PromptGeneratorLab</title>
+<meta name="description" content="ROSES (Role, Objective, Scenario, Expected Solution, Steps): A structured, solution-oriented framework for consulting-style problems. See the structure, a bad-vs-good prompt example, and when to use it.">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://promptgeneratorlab.com/prompt-frameworks/roses/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ROSES Prompt Framework — Role, Objective, Scenario, Expected Solution, Steps | PromptGeneratorLab">
+<meta property="og:description" content="ROSES (Role, Objective, Scenario, Expected Solution, Steps): A structured, solution-oriented framework for consulting-style problems. See the structure, a bad-vs-good prompt example, and when to use it.">
+<meta property="og:url" content="https://promptgeneratorlab.com/prompt-frameworks/roses/">
+<meta property="og:image" content="https://promptgeneratorlab.com/og-image.png">
+<meta property="og:site_name" content="PromptGeneratorLab">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ROSES Prompt Framework — Role, Objective, Scenario, Expected Solution, Steps | PromptGeneratorLab">
+<meta name="twitter:description" content="ROSES (Role, Objective, Scenario, Expected Solution, Steps): A structured, solution-oriented framework for consulting-style problems. See the structure, a bad-vs-good prompt example, and when to use it.">
+<meta name="twitter:image" content="https://promptgeneratorlab.com/og-image.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://promptgeneratorlab.com/"},{"@type":"ListItem","position":2,"name":"Prompt Frameworks","item":"https://promptgeneratorlab.com/prompt-frameworks/"},{"@type":"ListItem","position":3,"name":"ROSES","item":"https://promptgeneratorlab.com/prompt-frameworks/roses/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"DefinedTerm","name":"ROSES prompt framework","description":"A structured, solution-oriented framework for consulting-style problems.","inDefinedTermSet":"https://promptgeneratorlab.com/prompt-frameworks/"}</script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="/" class="logo">promptgeneratorlab<span class="dot">.</span></a>
+    <div class="nav-links">
+      <a href="/#how">How to Use</a>
+      <a href="/#why">Why Use It</a>
+      <a href="/prompt-frameworks/">Frameworks</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/examples.html">Examples</a>
+      <a href="/about.html">About</a>
+      <a href="/#generator" class="cta">Try It Free</a>
+    </div>
+  </div>
+</nav>
+<nav class="breadcrumbs wrap" aria-label="Breadcrumb"><a href="/">Home</a> <span class="crumb-sep">/</span> <a href="/prompt-frameworks/">Prompt Frameworks</a> <span class="crumb-sep">/</span> <span aria-current="page">ROSES</span></nav>
+<header class="page-head">
+  <div class="wrap">
+    <div class="eyebrow">Prompt Framework</div>
+    <h1>ROSES <span class="accent">prompt framework</span></h1>
+    <p class="sub"><strong>Role, Objective, Scenario, Expected Solution, Steps</strong> — A structured, solution-oriented framework for consulting-style problems.</p>
+  </div>
+</header>
+
+<section class="info">
+  <div class="wrap legal">
+    <h2>When to use ROSES</h2>
+    <p>ROSES is suited to problems that need a considered recommendation rather than a straightforward answer — strategic decisions, tradeoff analysis, or anything where you want the AI to reason like a consultant working through a specific scenario toward a defined kind of solution.</p>
+
+    <h2>The ROSES components</h2>
+  </div>
+  <div class="wrap">
+    <div class="tool-section" style="padding-top:0;">
+      
+      <div class="faq-item">
+        <h3>R — Role</h3>
+        <p>The expertise or perspective the AI should reason from.</p>
+      </div>
+      <div class="faq-item">
+        <h3>O — Objective</h3>
+        <p>The underlying goal behind the request.</p>
+      </div>
+      <div class="faq-item">
+        <h3>S — Scenario</h3>
+        <p>The specific situation, including relevant constraints and stakeholders.</p>
+      </div>
+      <div class="faq-item">
+        <h3>E — Expected Solution</h3>
+        <p>The type of answer you're looking for — a recommendation, a comparison, a decision.</p>
+      </div>
+      <div class="faq-item">
+        <h3>S — Steps</h3>
+        <p>How you want the reasoning or the answer broken down.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap legal">
+    <h2>Bad prompt vs. ROSES-structured prompt</h2>
+    <p><strong>Bad prompt:</strong></p>
+    <p style="font-style:italic;">“Should I raise my prices?”</p>
+    <p><strong>Structured with ROSES:</strong></p>
+    <pre style="white-space:pre-wrap; background:var(--card); padding:16px; border-radius:10px; border:1px solid var(--border); font-family:'IBM Plex Mono',monospace; font-size:13.5px; line-height:1.7;">Role: You are a pricing strategist for small subscription businesses.
+Objective: I want to increase revenue without losing too many existing customers.
+Scenario: I run a $15/month tool with 400 subscribers, churn is currently 5% monthly, no price increase in 2 years.
+Expected Solution: A specific recommendation, not a list of general pricing strategies.
+Steps: State the recommendation first, then the reasoning, then one risk to watch for.</pre>
+
+    <h2>What you get back</h2>
+    <p>A specific price-increase recommendation stated up front, followed by the reasoning tied to the given churn rate and subscriber count, and a named risk to monitor — not a generic list of pricing tactics.</p>
+
+    <h2>Which AI models it works well with</h2>
+    <p>ROSES works well with Claude for nuanced, tradeoff-heavy business reasoning, and with ChatGPT when you want a faster, more direct recommendation.</p>
+
+    <p><a href="/?framework=roses#generator" class="cta">Generate a prompt with ROSES →</a></p>
+  </div>
+</section>
+
+<section class="tool-section">
+  <div class="wrap">
+    <h2>Related frameworks</h2>
+    <div class="grid3">
+        <div class="card">
+          <div class="num">COAST</div>
+          <h3><a href="/prompt-frameworks/coast/">COAST</a></h3>
+          <p>A five-part framework for detailed, multi-constraint tasks.</p>
+        </div>
+        <div class="card">
+          <div class="num">CARE</div>
+          <h3><a href="/prompt-frameworks/care/">CARE</a></h3>
+          <p>A result-oriented structure that keeps the AI focused on the outcome you actually need.</p>
+        </div>
+        <div class="card">
+          <div class="num">CREO</div>
+          <h3><a href="/prompt-frameworks/creo/">CREO</a></h3>
+          <p>A framework built for answers that need to be grounded in specific evidence.</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="col">
+        <h4>promptgeneratorlab</h4>
+        <a href="/">Free AI Prompt Generator</a>
+      </div>
+      <div class="col">
+        <h4>Site</h4>
+        <a href="/#how">How to Use</a>
+        <a href="/#why">Why Use It</a>
+        <a href="/prompt-frameworks/">Prompt Frameworks</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/examples.html">Example Prompts</a>
+        <a href="/about.html">About Us</a>
+        <a href="/contact.html">Contact Us</a>
+      </div>
+      <div class="col">
+        <h4>Legal</h4>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms &amp; Conditions</a>
+        <a href="/cookie-policy.html">Cookie Policy</a>
+        <a href="/disclaimer.html">Disclaimer</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> promptgeneratorlab.com — Free AI Prompt Generator.</div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="/js/cookie-consent.js"></script>
+</body>
+</html>

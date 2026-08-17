@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RISE Prompt Framework — Role, Input, Steps, Expectation | PromptGeneratorLab</title>
+<meta name="description" content="RISE (Role, Input, Steps, Expectation): A process-oriented framework for tasks that need to happen in a specific order. See the structure, a bad-vs-good prompt example, and when to use it.">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://promptgeneratorlab.com/prompt-frameworks/rise/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RISE Prompt Framework — Role, Input, Steps, Expectation | PromptGeneratorLab">
+<meta property="og:description" content="RISE (Role, Input, Steps, Expectation): A process-oriented framework for tasks that need to happen in a specific order. See the structure, a bad-vs-good prompt example, and when to use it.">
+<meta property="og:url" content="https://promptgeneratorlab.com/prompt-frameworks/rise/">
+<meta property="og:image" content="https://promptgeneratorlab.com/og-image.png">
+<meta property="og:site_name" content="PromptGeneratorLab">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RISE Prompt Framework — Role, Input, Steps, Expectation | PromptGeneratorLab">
+<meta name="twitter:description" content="RISE (Role, Input, Steps, Expectation): A process-oriented framework for tasks that need to happen in a specific order. See the structure, a bad-vs-good prompt example, and when to use it.">
+<meta name="twitter:image" content="https://promptgeneratorlab.com/og-image.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://promptgeneratorlab.com/"},{"@type":"ListItem","position":2,"name":"Prompt Frameworks","item":"https://promptgeneratorlab.com/prompt-frameworks/"},{"@type":"ListItem","position":3,"name":"RISE","item":"https://promptgeneratorlab.com/prompt-frameworks/rise/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"DefinedTerm","name":"RISE prompt framework","description":"A process-oriented framework for tasks that need to happen in a specific order.","inDefinedTermSet":"https://promptgeneratorlab.com/prompt-frameworks/"}</script>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="/" class="logo">promptgeneratorlab<span class="dot">.</span></a>
+    <div class="nav-links">
+      <a href="/#how">How to Use</a>
+      <a href="/#why">Why Use It</a>
+      <a href="/prompt-frameworks/">Frameworks</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/examples.html">Examples</a>
+      <a href="/about.html">About</a>
+      <a href="/#generator" class="cta">Try It Free</a>
+    </div>
+  </div>
+</nav>
+<nav class="breadcrumbs wrap" aria-label="Breadcrumb"><a href="/">Home</a> <span class="crumb-sep">/</span> <a href="/prompt-frameworks/">Prompt Frameworks</a> <span class="crumb-sep">/</span> <span aria-current="page">RISE</span></nav>
+<header class="page-head">
+  <div class="wrap">
+    <div class="eyebrow">Prompt Framework</div>
+    <h1>RISE <span class="accent">prompt framework</span></h1>
+    <p class="sub"><strong>Role, Input, Steps, Expectation</strong> — A process-oriented framework for tasks that need to happen in a specific order.</p>
+  </div>
+</header>
+
+<section class="info">
+  <div class="wrap legal">
+    <h2>When to use RISE</h2>
+    <p>RISE is built for multi-step tasks — anything where the AI needs to work through a sequence rather than produce one answer in a single pass. Use it for plans, procedures, tutorials, or any task where getting the order right matters as much as the content.</p>
+
+    <h2>The RISE components</h2>
+  </div>
+  <div class="wrap">
+    <div class="tool-section" style="padding-top:0;">
+      
+      <div class="faq-item">
+        <h3>R — Role</h3>
+        <p>The expertise the AI should bring to sequencing and executing the task.</p>
+      </div>
+      <div class="faq-item">
+        <h3>I — Input</h3>
+        <p>The starting material or situation the AI is working from.</p>
+      </div>
+      <div class="faq-item">
+        <h3>S — Steps</h3>
+        <p>The stages you want the AI to work through, in order.</p>
+      </div>
+      <div class="faq-item">
+        <h3>E — Expectation</h3>
+        <p>What the finished, step-by-step output should look like.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap legal">
+    <h2>Bad prompt vs. RISE-structured prompt</h2>
+    <p><strong>Bad prompt:</strong></p>
+    <p style="font-style:italic;">“Help me plan a product launch.”</p>
+    <p><strong>Structured with RISE:</strong></p>
+    <pre style="white-space:pre-wrap; background:var(--card); padding:16px; border-radius:10px; border:1px solid var(--border); font-family:'IBM Plex Mono',monospace; font-size:13.5px; line-height:1.7;">Role: You are a product marketing manager who has run B2B SaaS launches before.
+Input: We're launching a new analytics dashboard feature in 6 weeks, team of 4, modest budget.
+Steps: Work through pre-launch (weeks 1-3), launch week, and post-launch (weeks 5-6) separately.
+Expectation: A week-by-week checklist, not a narrative — something I can hand straight to the team.</pre>
+
+    <h2>What you get back</h2>
+    <p>A week-by-week checklist broken into the three named phases, each with concrete action items sized for a 4-person team on a modest budget, formatted for direct handoff rather than prose.</p>
+
+    <h2>Which AI models it works well with</h2>
+    <p>RISE performs well with both ChatGPT and Claude for planning tasks, and is particularly effective with Claude when the plan needs to stay coherent across a long, detailed output.</p>
+
+    <p><a href="/?framework=rise#generator" class="cta">Generate a prompt with RISE →</a></p>
+  </div>
+</section>
+
+<section class="tool-section">
+  <div class="wrap">
+    <h2>Related frameworks</h2>
+    <div class="grid3">
+        <div class="card">
+          <div class="num">COAST</div>
+          <h3><a href="/prompt-frameworks/coast/">COAST</a></h3>
+          <p>A five-part framework for detailed, multi-constraint tasks.</p>
+        </div>
+        <div class="card">
+          <div class="num">ROSES</div>
+          <h3><a href="/prompt-frameworks/roses/">ROSES</a></h3>
+          <p>A structured, solution-oriented framework for consulting-style problems.</p>
+        </div>
+        <div class="card">
+          <div class="num">CREATE</div>
+          <h3><a href="/prompt-frameworks/create/">CREATE</a></h3>
+          <p>A six-part, iteration-friendly framework built for getting the details right.</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="col">
+        <h4>promptgeneratorlab</h4>
+        <a href="/">Free AI Prompt Generator</a>
+      </div>
+      <div class="col">
+        <h4>Site</h4>
+        <a href="/#how">How to Use</a>
+        <a href="/#why">Why Use It</a>
+        <a href="/prompt-frameworks/">Prompt Frameworks</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/examples.html">Example Prompts</a>
+        <a href="/about.html">About Us</a>
+        <a href="/contact.html">Contact Us</a>
+      </div>
+      <div class="col">
+        <h4>Legal</h4>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms &amp; Conditions</a>
+        <a href="/cookie-policy.html">Cookie Policy</a>
+        <a href="/disclaimer.html">Disclaimer</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> promptgeneratorlab.com — Free AI Prompt Generator.</div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="/js/cookie-consent.js"></script>
+</body>
+</html>

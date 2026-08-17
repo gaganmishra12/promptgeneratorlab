@@ -1,0 +1,78 @@
+[
+  {
+    "slug": "chatgpt-prompt-generator",
+    "modelName": "ChatGPT",
+    "vendor": "OpenAI",
+    "tagline": "Structured prompts tuned for GPT's conversational, general-purpose strengths.",
+    "whenToUse": "Use ChatGPT-optimized prompts for everyday writing, brainstorming, research summaries, coding help, and general Q&A where you want a fast, well-rounded response without heavy customization.",
+    "strengths": [
+      { "title": "General-purpose reasoning", "description": "Strong all-round reasoning and broad knowledge coverage across most everyday tasks." },
+      { "title": "Conversational refinement", "description": "Handles multi-turn conversation and follow-up refinement well, so you can iterate in the same thread." },
+      { "title": "Format following", "description": "Good at following explicit formatting instructions — tables, lists, JSON, and other strict output shapes." },
+      { "title": "Ecosystem", "description": "Wide plugin and tool ecosystem for extended tasks like browsing, code execution, and file analysis." }
+    ],
+    "badPrompt": "Write me a blog post about productivity.",
+    "goodPrompt": "Role: You are a productivity coach writing for busy freelancers.\nAction: Write a 700-word blog post titled \"Why Time Blocking Fails Most People.\"\nContext: Open with a relatable scenario. Include three specific mistakes with fixes.\nLayout/Length: End with one actionable takeaway. Tone: conversational, no jargon.",
+    "exampleOutput": "A 700-word post with a clear angle and a real hook, rather than a generic listicle — three concrete mistakes, each paired with a fix, and a single closing takeaway readers can act on today.",
+    "recommendedFrameworks": ["race", "care", "ape"],
+    "related": ["claude-prompt-generator", "gemini-prompt-generator"],
+    "generatorValue": "chatgpt"
+  },
+  {
+    "slug": "claude-prompt-generator",
+    "modelName": "Claude",
+    "vendor": "Anthropic",
+    "tagline": "Structured prompts tuned for Claude's careful reasoning and long-context strengths.",
+    "whenToUse": "Use Claude-optimized prompts for long-document analysis, nuanced writing, careful multi-step reasoning, coding with large context, and tasks where tone and constraints genuinely matter.",
+    "strengths": [
+      { "title": "Long-context handling", "description": "Strong at working across large documents or codebases without losing track of earlier details." },
+      { "title": "Careful writing", "description": "Nuanced writing with good instruction-following on tone, constraints, and audience." },
+      { "title": "Structured reasoning", "description": "Reasons well step by step when a prompt asks it to show its work." },
+      { "title": "Handles ambiguity", "description": "Will ask clarifying questions when prompted to, rather than guessing silently." }
+    ],
+    "badPrompt": "Summarize this document.",
+    "goodPrompt": "Role: You are a research analyst.\nAction: Read the attached report and produce a 5-bullet executive summary.\nContext: Audience is a non-technical VP. Prioritize business impact over methodology.\nExample: Flag any claims that lack supporting data, similar to how an analyst would annotate a memo before forwarding it.",
+    "exampleOutput": "A 5-bullet summary a VP could act on without a follow-up question — business impact first, methodology skipped unless it changes the conclusion, and any unsupported claims clearly flagged.",
+    "recommendedFrameworks": ["oracle", "create", "rise"],
+    "related": ["chatgpt-prompt-generator", "gemini-prompt-generator"],
+    "generatorValue": "claude"
+  },
+  {
+    "slug": "gemini-prompt-generator",
+    "modelName": "Gemini",
+    "vendor": "Google",
+    "tagline": "Structured prompts tuned for Gemini's multimodal and research strengths.",
+    "whenToUse": "Use Gemini-optimized prompts for multimodal tasks (text plus image or video context), research that benefits from current information, and workflows tied into the Google ecosystem.",
+    "strengths": [
+      { "title": "Multimodal understanding", "description": "Strong at reasoning across text, image, and video context in the same prompt." },
+      { "title": "Grounded research", "description": "Good integration with search grounding for tasks that need current information." },
+      { "title": "Structured extraction", "description": "Solid at structured data extraction and side-by-side comparison tasks." },
+      { "title": "Long context", "description": "Competitive long-context handling for large inputs." }
+    ],
+    "badPrompt": "Compare these two products.",
+    "goodPrompt": "Role: You are a shopping assistant for a budget-conscious first-time buyer.\nAction: Compare Product A and Product B.\nLayout/Length: Output a table with columns: Feature, Product A, Product B, Winner. Follow with a 2-sentence recommendation.",
+    "exampleOutput": "A clean comparison table by feature, followed by a short, decisive recommendation — not a meandering paragraph comparison.",
+    "recommendedFrameworks": ["tag", "coast", "roses"],
+    "related": ["chatgpt-prompt-generator", "claude-prompt-generator"],
+    "generatorValue": null
+  },
+  {
+    "slug": "ai-image-prompt-generator",
+    "modelName": "AI Image Models",
+    "vendor": "Midjourney, DALL·E, Flux, and others",
+    "tagline": "Structured prompts covering subject, style, lighting, and composition for image generators.",
+    "whenToUse": "Use image-optimized prompts for concept art, product mockups, cinematic stills, portraits, and any visual generation task where a vague prompt produces inconsistent results.",
+    "strengths": [
+      { "title": "Style control", "description": "Precise control over style and mood when a prompt specifies it explicitly rather than leaving it implied." },
+      { "title": "Composition & lighting", "description": "Naming composition and lighting language yields far more consistent results across generations." },
+      { "title": "Reference modifiers", "description": "Film stock, lens, and artist-style modifiers meaningfully shift the output when named directly." },
+      { "title": "Cross-model portability", "description": "Works across most major image generators with only minor syntax adjustments." }
+    ],
+    "badPrompt": "A cool robot.",
+    "goodPrompt": "Subject: A weathered industrial robot standing in a rain-soaked alley at night.\nContext: Neon signage reflected in puddles.\nLayout/Style: Cinematic lighting, shallow depth of field, shot on 35mm film, moody blue-orange color grade.",
+    "exampleOutput": "A far more art-directed image than a one-line description would produce — consistent mood, lighting, and framing because the prompt named them instead of leaving them to chance.",
+    "recommendedFrameworks": ["create", "tag"],
+    "related": ["chatgpt-prompt-generator", "gemini-prompt-generator"],
+    "generatorValue": null
+  }
+]

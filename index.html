@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free AI Prompt Generator — PromptGeneratorLab</title>
+<meta name="description" content="PromptGeneratorLab is a free AI Prompt Generator. Describe your idea, pick a proven prompt framework, target your AI model, and refine the result — no login required.">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://promptgeneratorlab.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free AI Prompt Generator — PromptGeneratorLab">
+<meta property="og:description" content="PromptGeneratorLab is a free AI Prompt Generator. Describe your idea, pick a proven prompt framework, target your AI model, and refine the result — no login required.">
+<meta property="og:url" content="https://promptgeneratorlab.com/">
+<meta property="og:image" content="https://promptgeneratorlab.com/og-image.png">
+<meta property="og:site_name" content="PromptGeneratorLab">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free AI Prompt Generator — PromptGeneratorLab">
+<meta name="twitter:description" content="PromptGeneratorLab is a free AI Prompt Generator. Describe your idea, pick a proven prompt framework, target your AI model, and refine the result — no login required.">
+<meta name="twitter:image" content="https://promptgeneratorlab.com/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "PromptGeneratorLab",
+  "url": "https://promptgeneratorlab.com/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (web-based)",
+  "description": "A free AI Prompt Generator. Describe your idea, pick a proven prompt framework, target your AI model, and refine the result.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="/" class="logo">promptgeneratorlab<span class="dot">.</span></a>
+    <div class="nav-links">
+      <a href="/#how">How to Use</a>
+      <a href="/#why">Why Use It</a>
+      <a href="/prompt-frameworks/">Frameworks</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/examples.html">Examples</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/#generator" class="cta">Try It Free</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <div class="eyebrow">Free AI Prompt Generator · No login required</div>
+    <h1>The <span class="accent">AI Prompt Generator</span><br>built on proven frameworks.</h1>
+    <p class="sub">Describe your idea, choose a prompt framework, target the AI model you're using, and get a clear, structured prompt in seconds. Free to use, no account needed.</p>
+  </div>
+</header>
+
+<section class="tool-section" id="generator">
+  <div class="wrap">
+
+    <div class="tool-grid">
+      <div>
+        <div class="desk">
+          <span class="field-label">Your idea</span>
+          <div class="sentence-input">
+            <span class="prefix">I want a prompt that will</span>
+            <textarea id="idea" rows="1" placeholder=" explain compound interest to a beginner in a friendly, casual tone..." maxlength="500"></textarea>
+          </div>
+          <div id="charCount" style="text-align:right; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--text-soft); margin:-12px 0 18px;">0 / 500</div>
+
+          <div class="suggestion-row" id="suggestions">
+            <div class="suggestion-chip">Write a blog post intro</div>
+            <div class="suggestion-chip">Draft a professional email</div>
+            <div class="suggestion-chip">Brainstorm content ideas</div>
+            <div class="suggestion-chip">Explain a complex topic simply</div>
+            <div class="suggestion-chip">Create a content calendar</div>
+            <div class="suggestion-chip">Design an image prompt</div>
+            <div class="suggestion-chip">Debug a piece of code</div>
+          </div>
+
+          <div class="select-row">
+            <div class="select-field">
+              <span class="field-label">Prompt framework</span>
+              <div class="custom-select" id="frameworkSelect">
+                <button type="button" class="select-trigger" id="frameworkTrigger">
+                  <span id="frameworkTriggerLabel">Standard (ORACLE)</span>
+                  <span class="arrow">▾</span>
+                </button>
+                <div class="select-menu" id="frameworkMenu">
+                  <div class="select-option active" data-value="standard" data-label="Standard (ORACLE)" data-desc="Objective, Role, Action, Context, Layout/Length, Example — a well-rounded structure for most everyday tasks."><span class="opt-name">Standard</span><span>ORACLE</span></div>
+                  <div class="select-option" data-value="reasoning" data-label="Reasoning" data-desc="Guides the AI to think step-by-step. Best when you need it to work through a problem or explain its logic."><span class="opt-name">Reasoning</span></div>
+                  <div class="select-option" data-value="race" data-label="RACE" data-desc="Role, Action, Context, Example — direct and goal-focused, good for fast content creation."><span class="opt-name">RACE</span></div>
+                  <div class="select-option" data-value="care" data-label="CARE" data-desc="Context, Action, Result, Example — action-oriented, works well for business and problem-solving."><span class="opt-name">CARE</span></div>
+                  <div class="select-option" data-value="ape" data-label="APE" data-desc="Action, Purpose, Expectation — simple and efficient for quick, clear tasks."><span class="opt-name">APE</span></div>
+                  <div class="select-option" data-value="create" data-label="CREATE" data-desc="Characterise, Request, Examples, Adjust, Test, Evaluate — iterative, good for fine-tuning quality."><span class="opt-name">CREATE</span></div>
+                  <div class="select-option" data-value="tag" data-label="TAG" data-desc="Task, Action, Goal — one of the most straightforward frameworks for simple, focused tasks."><span class="opt-name">TAG</span></div>
+                  <div class="select-option" data-value="creo" data-label="CREO" data-desc="Context, Role, Evidence, Output — ideal for tasks requiring factual accuracy."><span class="opt-name">CREO</span></div>
+                  <div class="select-option" data-value="rise" data-label="RISE" data-desc="Role, Input, Steps, Expectation — a reliable general-purpose, step-by-step framework."><span class="opt-name">RISE</span></div>
+                  <div class="select-option" data-value="pain" data-label="PAIN" data-desc="Problem, Action, Information, Next Steps — best for diagnosing an issue and suggesting next steps."><span class="opt-name">PAIN</span></div>
+                  <div class="select-option" data-value="coast" data-label="COAST" data-desc="Context, Objective, Actions, Scenario, Task — comprehensive, for deep, process-heavy tasks."><span class="opt-name">COAST</span></div>
+                  <div class="select-option" data-value="roses" data-label="ROSES" data-desc="Role, Objective, Scenario, Expected Solution, Steps — detailed and sequential, for complex outputs."><span class="opt-name">ROSES</span></div>
+                  <div class="select-option" data-value="resee" data-label="RESEE" data-desc="Review, Evaluate, Suggest, Enhance, Explain — built for refining content that already exists."><span class="opt-name">RESEE</span></div>
+                </div>
+              </div>
+              <div class="select-desc" id="frameworkDesc">Objective, Role, Action, Context, Layout/Length, Example — a well-rounded structure for most everyday tasks.</div>
+            </div>
+
+            <div class="select-field">
+              <span class="field-label">Target AI model</span>
+              <div class="custom-select" id="modelSelect">
+                <button type="button" class="select-trigger" id="modelTrigger">
+                  <span id="modelTriggerLabel">Universal (any AI)</span>
+                  <span class="arrow">▾</span>
+                </button>
+                <div class="select-menu" id="modelMenu">
+                  <div class="select-option active" data-value="oracle" data-label="Universal (any AI)" data-desc="Written in a universal style that works well across ChatGPT, Claude, Gemini, and other AI tools."><span class="opt-name">Universal</span></div>
+                  <div class="select-option" data-value="chatgpt" data-label="ChatGPT Optimised" data-desc="Wording and structure tuned specifically for how ChatGPT processes and responds to prompts."><span class="opt-name">ChatGPT</span><span>Optimised</span></div>
+                  <div class="select-option" data-value="claude" data-label="Claude Optimised" data-desc="Wording and structure tuned specifically for how Claude interprets instructions."><span class="opt-name">Claude</span><span>Optimised</span></div>
+                </div>
+              </div>
+              <div class="select-desc" id="modelDesc">Written in a universal style that works well across ChatGPT, Claude, Gemini, and other AI tools.</div>
+            </div>
+          </div>
+
+          <div class="generate-row">
+            <button class="stamp-btn" id="genBtn">Generate</button>
+            <span class="hint" id="hint">Takes a few seconds</span>
+          </div>
+        </div>
+
+        <div class="output-card" id="outputCard">
+          <div class="output-head">
+            <span class="label">Generated prompt</span>
+            <button class="copy-btn" id="copyBtn">Copy</button>
+          </div>
+          <div class="tags" id="tags"></div>
+          <div class="prompt-text" id="promptText"></div>
+        </div>
+      </div>
+
+      <aside class="improve-panel">
+        <h3>Improve Prompt</h3>
+        <p class="desc">Generate a prompt first, then refine it here without starting over.</p>
+
+        <div class="improve-field">
+          <label for="impGoal">Main goal</label>
+          <input type="text" id="impGoal" placeholder="e.g. increase engagement">
+        </div>
+        <div class="improve-field">
+          <label for="impAudience">Audience</label>
+          <input type="text" id="impAudience" placeholder="e.g. busy professionals">
+        </div>
+        <div class="improve-field">
+          <label for="impFormat">Format / detail level</label>
+          <input type="text" id="impFormat" placeholder="e.g. short and punchy">
+        </div>
+        <div class="improve-field">
+          <label for="impMore">Additional instructions</label>
+          <textarea id="impMore" rows="3" placeholder="e.g. make it more persuasive, add a CTA..."></textarea>
+        </div>
+
+        <button class="improve-btn" id="improveBtn" disabled>Improve Prompt</button>
+      </aside>
+    </div>
+
+  </div>
+</section>
+
+<section class="info" id="how">
+  <div class="wrap">
+    <div class="eyebrow">How to use it</div>
+    <h2>Four steps to a better prompt</h2>
+    <div class="grid3">
+      <div class="card"><div class="num">01</div><h3>Describe your idea</h3><p>Type it yourself, or click a Quick Suggestion to start from a ready-made task.</p></div>
+      <div class="card"><div class="num">02</div><h3>Pick a framework</h3><p>Choose from 13 proven prompt-writing structures, or leave it on Standard.</p></div>
+      <div class="card"><div class="num">03</div><h3>Target your AI model</h3><p>Optimise the wording for ChatGPT, Claude, or a universal format that works anywhere.</p></div>
+      <div class="card"><div class="num">04</div><h3>Generate & refine</h3><p>Copy the result, or use the Improve panel to adjust goal, audience, and tone without starting over.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="info alt" id="why">
+  <div class="wrap">
+    <div class="eyebrow">Why use PromptGeneratorLab</div>
+    <h2>A clearer way to write prompts</h2>
+    <p>Good prompts follow a structure. Most people just don't know which one to use — this tool picks it for you.</p>
+    <div class="grid3">
+      <div class="card"><h3>Proven frameworks</h3><p>13 different prompt-writing structures, from quick TAG prompts to detailed ROSES breakdowns — pick what fits the task.</p></div>
+      <div class="card"><h3>Model-specific tuning</h3><p>Prompts are worded differently depending on whether you're using ChatGPT, Claude, or something else.</p></div>
+      <div class="card"><h3>Refine, don't restart</h3><p>The Improve panel lets you adjust goal, audience, and format in place, instead of regenerating from scratch.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="info">
+  <div class="wrap">
+    <div class="eyebrow">FAQ</div>
+    <h2>Quick answers</h2>
+    <div class="faq-item"><h3>Is this AI Prompt Generator really free?</h3><p>Yes. PromptGeneratorLab is completely free to use, with no login and no limit on how many prompts you generate.</p></div>
+    <div class="faq-item"><h3>What's a prompt framework?</h3><p>A structure for organizing what you tell the AI — like Role, Context, and Example — so nothing important gets left out.</p></div>
+    <div class="faq-item"><h3>Can I use the results with ChatGPT or Claude?</h3><p>Yes — pick your target model in the dropdown and the wording is tuned for it, or leave it Universal to work anywhere.</p></div>
+    <p style="margin-top:20px;"><a href="/faq.html" style="color:var(--indigo); font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:600;">See the full FAQ →</a></p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="col">
+        <h4>promptgeneratorlab</h4>
+        <a href="/">Free AI Prompt Generator</a>
+      </div>
+      <div class="col">
+        <h4>Site</h4>
+        <a href="/#how">How to Use</a>
+        <a href="/#why">Why Use It</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/prompt-frameworks/">Prompt Frameworks</a>
+        <a href="/examples.html">Example Prompts</a>
+        <a href="/about.html">About Us</a>
+        <a href="/contact.html">Contact Us</a>
+      </div>
+      <div class="col">
+        <h4>Legal</h4>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms & Conditions</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> promptgeneratorlab.com — Free AI Prompt Generator.</div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const ideaEl = document.getElementById('idea');
+const genBtn = document.getElementById('genBtn');
+const improveBtn = document.getElementById('improveBtn');
+const outputCard = document.getElementById('outputCard');
+const promptText = document.getElementById('promptText');
+const tagsEl = document.getElementById('tags');
+const hint = document.getElementById('hint');
+
+let lastPrompt = null;
+let selectedFramework = "standard";
+let selectedModel = "oracle";
+
+// --- Custom dropdown behavior (click to open, hover to preview description) ---
+function setupCustomSelect(selectId, triggerId, menuId, labelId, descId, onChange){
+  const trigger = document.getElementById(triggerId);
+  const menu = document.getElementById(menuId);
+  const label = document.getElementById(labelId);
+  const desc = document.getElementById(descId);
+  const options = menu.querySelectorAll('.select-option');
+  const defaultDesc = desc.textContent;
+
+  trigger.addEventListener('click', (e)=>{
+    e.stopPropagation();
+    const isOpen = menu.classList.contains('open');
+    document.querySelectorAll('.select-menu.open').forEach(m=>m.classList.remove('open'));
+    document.querySelectorAll('.select-trigger.open').forEach(t=>t.classList.remove('open'));
+    if(!isOpen){
+      menu.classList.add('open');
+      trigger.classList.add('open');
+    }
+  });
+
+  options.forEach(opt=>{
+    opt.addEventListener('mouseenter', ()=>{
+      desc.textContent = opt.dataset.desc;
+    });
+    opt.addEventListener('mouseleave', ()=>{
+      const active = menu.querySelector('.select-option.active');
+      desc.textContent = active ? active.dataset.desc : defaultDesc;
+    });
+    opt.addEventListener('click', ()=>{
+      options.forEach(o=>o.classList.remove('active'));
+      opt.classList.add('active');
+      label.textContent = opt.dataset.label;
+      desc.textContent = opt.dataset.desc;
+      menu.classList.remove('open');
+      trigger.classList.remove('open');
+      onChange(opt.dataset.value);
+    });
+  });
+}
+
+setupCustomSelect('frameworkSelect','frameworkTrigger','frameworkMenu','frameworkTriggerLabel','frameworkDesc', (v)=>{ selectedFramework = v; });
+setupCustomSelect('modelSelect','modelTrigger','modelMenu','modelTriggerLabel','modelDesc', (v)=>{ selectedModel = v; });
+
+// Preselect framework from ?framework= URL param (used by /prompt-frameworks/ pages)
+(function () {
+  const params = new URLSearchParams(window.location.search);
+  const wanted = params.get('framework');
+  if (!wanted) return;
+  const opt = document.querySelector('#frameworkMenu .select-option[data-value="' + wanted + '"]');
+  if (opt) opt.click();
+})();
+
+// Preselect target model from ?model= URL param (used by model landing pages,
+// e.g. /chatgpt-prompt-generator/ links to /?model=chatgpt#generator)
+(function () {
+  const params = new URLSearchParams(window.location.search);
+  const wanted = params.get('model');
+  if (!wanted) return;
+  const opt = document.querySelector('#modelMenu .select-option[data-value="' + wanted + '"]');
+  if (opt) opt.click();
+})();
+
+document.addEventListener('click', ()=>{
+  document.querySelectorAll('.select-menu.open').forEach(m=>m.classList.remove('open'));
+  document.querySelectorAll('.select-trigger.open').forEach(t=>t.classList.remove('open'));
+});
+
+document.getElementById('suggestions').addEventListener('click', (e)=>{
+  if(!e.target.classList.contains('suggestion-chip')) return;
+  ideaEl.value = e.target.textContent.trim().toLowerCase();
+  ideaEl.dispatchEvent(new Event('input'));
+  ideaEl.focus();
+});
+
+ideaEl.addEventListener('input', function(){
+  this.style.height = 'auto';
+  this.style.height = this.scrollHeight + 'px';
+  document.getElementById('charCount').textContent = this.value.length + ' / 500';
+});
+
+async function callGenerate(body){
+  const response = await fetch("/api/generate", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body)
+  });
+  if(response.status === 429){
+    const data = await response.json().catch(()=>({}));
+    throw new Error(data.error || "Too many requests, please wait a moment.");
+  }
+  if(!response.ok){ throw new Error("Server error"); }
+  return response.json();
+}
+
+genBtn.addEventListener('click', async ()=>{
+  const idea = ideaEl.value.trim();
+  if(!idea){ hint.textContent = "Type something first"; return; }
+
+  genBtn.disabled = true;
+  genBtn.textContent = "Working...";
+  hint.textContent = "Building your prompt...";
+  outputCard.classList.remove('show');
+
+  try{
+    const parsed = await callGenerate({
+      idea,
+      framework: selectedFramework,
+      targetModel: selectedModel
+    });
+
+    tagsEl.innerHTML = parsed.tags.map(t=>`<span class="tag">${t}</span>`).join('');
+    promptText.textContent = parsed.prompt;
+    lastPrompt = parsed.prompt;
+    outputCard.classList.add('show');
+    hint.textContent = "Takes a few seconds";
+    improveBtn.disabled = false;
+  }catch(err){
+    tagsEl.innerHTML = '';
+    promptText.textContent = err.message || "Something went wrong. Please try again.";
+    outputCard.classList.add('show');
+    hint.textContent = "Takes a few seconds";
+  }finally{
+    genBtn.disabled = false;
+    genBtn.textContent = "Generate";
+  }
+});
+
+improveBtn.addEventListener('click', async ()=>{
+  if(!lastPrompt) return;
+
+  improveBtn.disabled = true;
+  improveBtn.textContent = "Refining...";
+  hint.textContent = "Refining your prompt...";
+
+  try{
+    const parsed = await callGenerate({
+      idea: ideaEl.value.trim(),
+      framework: selectedFramework,
+      targetModel: selectedModel,
+      previousPrompt: lastPrompt,
+      goal: document.getElementById('impGoal').value.trim(),
+      audience: document.getElementById('impAudience').value.trim(),
+      format: document.getElementById('impFormat').value.trim(),
+      additional: document.getElementById('impMore').value.trim()
+    });
+
+    tagsEl.innerHTML = parsed.tags.map(t=>`<span class="tag">${t}</span>`).join('');
+    promptText.textContent = parsed.prompt;
+    lastPrompt = parsed.prompt;
+    hint.textContent = "Takes a few seconds";
+  }catch(err){
+    promptText.textContent = err.message || "Something went wrong. Please try again.";
+  }finally{
+    improveBtn.disabled = false;
+    improveBtn.textContent = "Improve Prompt";
+  }
+});
+
+document.getElementById('copyBtn').addEventListener('click', ()=>{
+  navigator.clipboard.writeText(promptText.textContent);
+  const btn = document.getElementById('copyBtn');
+  btn.textContent = "Copied";
+  btn.classList.add('copied');
+  setTimeout(()=>{ btn.textContent="Copy"; btn.classList.remove('copied'); }, 1800);
+});
+</script>
+<script src="/js/cookie-consent.js"></script>
+</body>
+</html>

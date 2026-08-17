@@ -1,0 +1,15 @@
+{
+  "name": "promptgeneratorlab-api",
+  "version": "1.0.0",
+  "description": "Backend for PromptGeneratorLab — serves POST /api/generate. Deployed separately from the static site (Hostinger serves the static files; this runs as its own Node process).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
